@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App-by Satyam_Athya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="main">
+        <img class="bg-image" src="./src/bgggg.jpg" alt="">
+
+        <div class="App-background">
+
+
+
+            <div class="todays-condition">
+                <div class="search-container">
+                    <input type="text" class="searchInput" placeholder="Search for Location...">
+                    <div class="search-icon"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+                </div>
+
+                <div class="other-conditions">
+
+                    <table>
+
+                        <tr>
+                            <th>Condition</th>
+                            <td class="condition">--</td>
+                        </tr>
+                        <tr>
+                            <th>Wind Direction</th>
+                            <td class="windDir">--</td>
+                        </tr>
+                        <tr>
+                            <th>Feels Like</th>
+                            <td class="feelsLike">--</td>
+                        </tr>
+                        <tr>
+                            <th>Humidity</th>
+                            <td class="Humidity">--</td>
+                        </tr>
+                        <tr>
+                            <th>PM10 (µg/m³)</th>
+                            <td class="Aqi">--</td>
+                        </tr>
+                    </table>
+
+
+
+                </div>
+                <div class="message"></div>
+            </div>
+
+
+            <ul class="forecastWeek">
+
+                <li class="forecast-day">
+                    <div class="left">
+                        <h4 class="day-date">Date</h4>
+                        <span class="day-condition"></span>
+                        <div>
+                            <img class="day-icon" src="src/bg.webp"
+                                style="width: 45px; height: 45px ;border-radius: 50%;" alt="">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <span class="dayTemp"> </span>&deg c
+                    </div>
+
+                </li>
+
+                <li class="forecast-day">
+                    <div class="left">
+                        <h4 class="day-date">Date</h4>
+                        <span class="day-condition"></span>
+                        <div>
+                            <img class="day-icon" src="src/bg.webp"
+                                style="width: 45px; height: 45px ;border-radius: 50%;" alt="">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <span class="dayTemp"> </span>&deg c
+                    </div>
+
+                </li>
+
+                <li class="forecast-day">
+                    <div class="left">
+                        <h4 class="day-date">Date</h4>
+                        <span class="day-condition"></span>
+                        <div>
+                            <img class="day-icon" src="src/bg.webp"
+                                style="width: 45px; height: 45px ;border-radius: 50%;" alt="">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <span class="dayTemp"> </span>&deg c
+                    </div>
+
+                </li>
+
+                <li class="forecast-day">
+                    <div class="left">
+                        <h4 class="day-date">Date</h4>
+                        <span class="day-condition"></span>
+                        <div>
+                            <img class="day-icon" src="src/bg.webp"
+                                style="width: 45px; height: 45px ;border-radius: 50%;" alt="">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <span class="dayTemp"> </span>&deg c
+                    </div>
+
+                </li>
+
+                <li class="forecast-day">
+                    <div class="left">
+                        <h4 class="day-date">Date</h4>
+                        <span class="day-condition"></span>
+                        <div>
+                            <img class="day-icon" src="src/bg.webp"
+                                style="width: 45px; height: 45px ;border-radius: 50%;" alt="">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <span class="dayTemp"> </span>&deg c
+                    </div>
+
+                </li>
+
+                <li class="forecast-day">
+                    <div class="left">
+                        <h4 class="day-date">Date</h4>
+                        <span class="day-condition"></span>
+                        <div>
+                            <img class="day-icon" src="src/bg.webp"
+                                style="width: 45px; height: 45px ;border-radius: 50%;" alt="">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <span class="dayTemp"> </span>&deg c
+                    </div>
+
+                </li>
+
+
+
+            </ul>
+
+        </div>
+
+        <div class="all-detail">
+
+            <div class="loca-temp">
+
+                <div class="area-location"></div>
+                <div style="font-size: 22px;"><span class="temperature">--</span>&deg C </div>
+                <div>
+                    <img class="temp-image" src="./src/bg.webp" style="height: 60px; width:60px ;border-radius:50% "
+                        alt="">
+                </div>
+
+            </div>
+
+
+            <div class="rest-details">
+
+                <div class="wind">
+                    <div "><span class=" speed"></span> Kmph</div>
+                    <img style="height: 80px;"
+                        src="https://static.vecteezy.com/system/resources/previews/028/051/914/non_2x/3d-rendering-dust-isolated-useful-for-food-allergen-allergy-disease-and-antigen-design-element-png.png"
+                        alt="">
+                </div>
+
+                <div class="air-pressure">
+                    <div><span class="pressure"></span> bar</div>
+                    <img style="height: 80px; border-radius: 50%;"
+                        src="https://static.vecteezy.com/system/resources/previews/044/071/098/non_2x/pressure-gauge-line-filled-light-icon-vector.jpg"
+                        alt="">
+
+                </div>
+
+                <div class="date-time">
+                    <div class="date">Date</div>
+                    <div class="time">Time</div>
+                    <!-- <div class="Seconds">sec</div> -->
+                    <div class="day">Day</div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
